@@ -1,0 +1,62 @@
+
+#include "stdafx.h"
+#include <C:\TopVG\TEST\array new.h>
+
+layout& ARRAY NEW_::LAYOUT()
+{
+  FRAG(array new)
+    // Объявление формальных параметров фрагмента
+    // Элементов в списке: 0
+
+    // Объявление виртуальных линий
+    // VLIN_X(BASE_X, 0);
+    // VLIN_Y(BASE_Y, 0);
+
+    // Объявление систем координат 
+    // COORDINATE(BASE_CRD, BASE_X, BASE_Y);
+      // Точки привязки
+        // ORIGIN(BASE, 0.00, 0.00);
+      // Контакты одноточечные
+        OR(NORTH) CSI(9.00, 11.00);
+        OR(NORTH) CSI(14.00, 4.00);
+      // Шины, линии, контуры
+        B1(-4.00, 0.00) X(34.00);
+        B1(-4.00, 0.00) Y(17.00);
+        B1(-4.00, 8.00) X(34.00);
+        B1(-4.00, 17.00) X(34.00);
+        B1(0.00, -4.00) X(34.00);
+        Wire(B2); W_WIRE(1.00) M1(0.00, 5.50) X(34.00);
+        Wire(B1); W_WIRE(1.00) M1(0.00, 14.00) X(34.00);
+        B1(0.00, 17.00) Y(-4.00);
+        Wire(A1); W_WIRE(1.00) M2(2.00, 17.00) Y(0.00);
+        Wire(VCC); W_WIRE(-2.00) M2(4.50, 17.00) Y(0.00);
+        Wire(GND); W_WIRE(-2.00) M2(7.00, 17.00) Y(0.00);
+        W_WIRE(1.00) SI(9.00, 11.00) Y(8.00);
+        B1(12.00, 17.00) Y(-4.00);
+        Wire(QQQ); W_WIRE(1.00) M1(14.00, 4.00) X(24.00);
+        W_WIRE(1.00) SI(14.00, 8.00) Y(4.00);
+        Wire(GND1); W_WIRE(-2.00) M2(16.50, 0.00) Y(17.00);
+        Wire(VCC1); W_WIRE(-2.00) M2(19.00, 0.00) Y(17.00);
+        Wire(A2); W_WIRE(1.00) M2(22.00, 17.00) Y(0.00);
+        Wire(QQ); W_WIRE(1.00) M1(24.00, 11.00) X(9.00);
+        B1(24.00, 17.00) Y(-4.00);
+        Wire(A3); W_WIRE(1.00) M2(26.00, 17.00) Y(0.00);
+        W_WIRE(-2.00) M2(28.00, 17.00) Y(0.00);
+        W_WIRE(-2.00) M2(30.50, 17.00) Y(0.00);
+        B1(34.00, 17.00) Y(-4.00);
+      // Тексты векторные
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(-2.00, 4.00, "S2 K2");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(-2.00, 12.00, "S1 K1");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(6.00, -2.00, "C1 KX1");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(6.00, 12.50, "A11");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(7.00, 4.50, "A21");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(16.50, -2.00, "C2 KX2");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(19.50, 13.00, "A12");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(20.00, 4.00, "A22");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(29.50, 3.50, "A23");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(29.50, 12.50, "A13");
+        H_TEXT(1.00) D_TEXT(-0.83) OR_TEXT(NORTH) TB(30.50, -1.50, "C3 KX3");
+  ENDF
+  return array new;
+}
+
